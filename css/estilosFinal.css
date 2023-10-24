@@ -1,0 +1,109 @@
+*{ /*especifico que TODO elemento comenzara sin margin ni padding*/
+    margin: 0px;
+    padding: 0px;  
+}
+
+/*
+header{
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+*/
+
+body{
+    color: black;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+section{
+    border: 3px solid rgb(255, 196, 4);
+    padding: 15px;
+    border: 10px;
+    margin: 10px;
+}
+
+nav{
+    padding: 20px;
+    border: 10px;
+    margin: 10px;
+}
+
+nav ul{
+    list-style-type: none; /*elimino los puntos de los elementos de la lista*/
+    background-color: rgb(255, 196, 4);
+    text-align: center;
+    padding: 15px;
+    border: 0px;
+    margin: 0px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+h1{
+    font-size: x-large;
+    text-align: center;
+}
+main{
+    padding: 20px;
+    border: 0px;
+    margin: 0px;
+}
+
+footer{
+    background-color: rgb(255, 196, 4);
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    color: white;
+    font-family: Arial;
+}
+
+.box{
+    display: grid;
+    overflow: auto;
+    background-color: rgb(255, 196, 4);
+    border: 3px solid white;
+}
+
+.laCaja{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solic black;
+}
+
+@media (min-width: 320px) {
+    /* Estilos para pantallas con un ancho minimo de 320 píxeles */
+    body {
+        font-size: 18px; /* reduce el tamaño de letra cuando el ancho minimo sea menor a 320 píxeles */
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@media (min-width: 480px) {
+    /* Estilos para pantallas con un ancho minimo de 480 píxeles */
+    body {
+        font-size: 16px; /* reduce el tamaño de letra cuando el ancho minimo sea menor a 480 píxeles */
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 768px) {
+    /* Estilos para pantallas con un ancho minimo de 768 píxeles */
+    body {
+        font-size: 14px; /* reduce el tamaño de letra cuando el ancho minimo sea menor a 768 píxeles */
+        background-color: rgb(0, 0, 0);
+    }
+}
